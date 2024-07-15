@@ -26,7 +26,8 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Inject API Key
-        run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}" >> .env  # Save your key in .env file
+        run: |
+          sed -i 's|REPLACE_WITH_API_KEY|${{ secrets.API_KEY }}|' path/to/your/script.js  # Update this with your script path
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
