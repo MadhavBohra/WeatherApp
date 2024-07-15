@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    
+
+    <div class="card">
+        <!-- <div class="search">
+
+            <div class="select-btn">
+                <span>Select City</span>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="content">
+                <div class="search-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <ul class="options">
+                    <li>India</li>
+                    <li>India</li>
+                    <li>India</li>
+                    <li>India</li>
+                </ul>
+            </div>
+
+        </div> -->
+
+        <div class= "search">
+            <div class="select-btn">
+                <span id="selectedText">Select City</span>
+                <img src="images/dropdown.png">
+            </div>
+            <div class="content">
+                <div class="search-box">
+
+                    <input type="text" placeholder="Search" id="searchInput" autocomplete="off">
+
+                </div>
+                <ul class="options" id="cityList">
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="weather">
+            <img src="images/rain.png" alt="" class="weather-icon">
+            <!-- <p>Cloudy</p> -->
+            <h1 class="temp">22°C</h1>
+            <!-- <p>Feels Like 31°C</p> -->
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
